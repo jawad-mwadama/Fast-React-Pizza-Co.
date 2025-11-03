@@ -3,7 +3,7 @@
 import OrderItem from "./OrderItem";
 
 import { useLoaderData } from "react-router-dom";
-import { getOrder } from "../../services/apiRestaurant";
+
 import {
   calcMinutesLeft,
   formatCurrency,
@@ -77,11 +77,6 @@ function Order() {
       </div>
     </div>
   );
-}
-
-export async function loader({ params }) {
-  const order = await getOrder(params.orderId);
-  return order;
 }
 
 export default Order;

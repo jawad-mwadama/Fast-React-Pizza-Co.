@@ -4,7 +4,10 @@ import Button from "../../ui/Button";
 
 import { formatCurrency } from "../../utilities/helpers";
 import { useDispatch, useSelector } from "react-redux";
-import { addItem, getCurrentQuantityById } from "../cart/CartSlice";
+import {
+  addItem,
+  getCurrentQuantityById,
+} from "../../../src/features/cart/cartSlice";
 import DeleteItem from "../cart/DeleteItem";
 import UpdateItemQuantity from "../cart/UpdateItemQuantity";
 

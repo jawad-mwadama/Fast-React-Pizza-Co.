@@ -2,7 +2,7 @@ import LinkButton from "../../ui/LinkButton";
 import Button from "../../ui/Button";
 import CartItem from "./CartItem";
 import { useDispatch, useSelector } from "react-redux";
-import { clearCart, getCart, getUsername } from "./CartSlice";
+import { clearCart, getCart, getUsername } from "../cart/cartSlice";
 import EmptyCart from "./EmptyCart";
 
 function Cart() {

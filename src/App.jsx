@@ -2,12 +2,13 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Home from "./ui/Home";
 import Error from "./ui/Error";
-import Menu, { loader as menuLoader } from "./features/menu/Menu";
+import Menu from "./features/menu/Menu";
+import { loader as menuLoader } from "./features/menu/MenuLoader.js";
 import Cart from "./features/cart/Cart";
-import CreateOrder, {
-  action as CreateOrderAction,
-} from "./features/order/CreateOrder";
-import Order, { loader as orderLoader } from "./features/order/Order";
+import CreateOrder from "./features/order/CreateOrder";
+import { action as CreateOrderAction } from "./features/order/CreateOrderAction.js";
+import Order from "./features/order/Order";
+import { loader as orderLoader } from "./features/order/OrderLoader.js";
 import AppLayout from "./ui/AppLayout";
 
 const router = createBrowserRouter([
