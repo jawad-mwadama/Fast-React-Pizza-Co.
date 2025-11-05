@@ -60,7 +60,9 @@ const userSlice = createSlice({
         console.log(action);
 
         state.status = "error";
-        state.error = action.error.message;
+
+        state.error =
+          "There was a problem getting your address, Make sure to fill this field! or turn on your location to access this feature";
       }),
 });
 
